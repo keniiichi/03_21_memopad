@@ -1,0 +1,212 @@
+body{
+    max-width: auto;
+	  margin: 0 auto;
+    padding:0;
+    /* text-align:left; */
+    font-size: 16px;
+    /* background-color:#00552e; */
+}
+header{ 
+    /* background-color:#00552e; */
+    /* border-bottom: 1px solid #ccc; */
+    text-align: left;
+  
+}
+
+h2{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  background-color:whitesmoke;
+}
+
+main{
+    padding-top: 40px;
+    background-color:whitesmoke;
+    /* border-bottom:1px solid #ccc; */
+    /* position:relative; */
+}
+
+footer{
+    font-size: 50%;
+    height: 25px;
+    padding-top: 10px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    background-color:lightsteelblue;
+    /* background-color: #66330e; */
+    /* border-bottom:1px solid #ccc; */
+    text-align:right;
+
+}
+ 
+input{
+    height: 30px;
+    margin: 1%;
+    width: 25%;
+    font-size:100%;
+    /* box-shadow: 1px 1px 1px 1px gainsboro; */
+    } 
+
+textarea{
+    display: table-cell;
+    margin: 1%;
+    width: 25%;
+    height: 300px;
+    font-size:100%;
+    /* box-shadow: 1px 1px 1px 1px gainsboro; */
+}
+.btn{
+    width: 100px;
+    font-size: 100%;
+    /* text-align: center;
+    display: block; */
+    padding: 10px 0px 10px;
+}
+
+.btnbtn{
+    /* display: table; */
+   /* margin-bottom: 20px; */
+    padding-bottom: 20px;
+    padding-left: 10px;
+    
+}
+
+
+/* ul{ */
+    /* padding: 0; */
+    /* border-top: 1px solid #000000; */
+    /* display:table;  定義 */
+    /* table-layout: fixed; */
+    /* width:100%; */
+/* } */
+/* li{ */
+    /* list-style-type:none; */
+    /* border: 1px solid #666; */
+    /* background-color: #FFF; */
+    /* display:table-cell;  定義 */
+    /* cursor: pointer; */
+/* } */
+/* li:hover{ */
+    /* background: #0066CC; */
+    /* color:#fff; */
+/* } */
+/* button:hover{ */
+    /* background: #66330e; */
+/* }  */
+
+
+/* ハンバーガーメニュー */
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.16);
+}
+.global-nav {
+  position: fixed;
+  right: -320px; /* ここで隠す */
+  top: 0;
+  width: 300px; /* スマホに収まるくらいで設定 */
+  height: 100vh;
+  padding-top: 40px;
+  background-color: #fff;
+  transition: all .6s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできる準備 */
+}
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px; /* クリックしやすいように幅を指定 */
+  height: 40px; /* クリックしやすいように高さを指定 */
+  cursor: pointer;
+  z-index: 300;
+}
+.global-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.global-nav__item {
+  text-align: center;
+  padding: 0 14px;
+}
+.global-nav__item a {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #111;
+}
+.global-nav__item a:hover {
+  background-color: #eee;
+}
+.hamburger__line {
+  position: absolute;
+  left: 11px;
+  width: 18px;
+  height: 1px;
+  background-color: #111;
+  transition: all .6s;
+}
+.hamburger__line--1 {
+  top: 14px;
+}
+.hamburger__line--2 {
+  top: 20px;
+}
+.hamburger__line--3 {
+  top: 26px;
+}
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+  right: 0;
+}
+.nav-open .black-bg {
+  opacity: .8;
+  visibility: visible;
+}
+.nav-open .hamburger__line--1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+.nav-open .hamburger__line--2 {
+  width: 0;
+  left: 50%;
+}
+.nav-open .hamburger__line--3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+/*付箋メモページ */
+.note {
+  background-color:whitesmoke;
+  padding: 10px;
+  cursor: pointer;
+}
+.note > input[type="text"] {
+  width: 90%;
+  height: 5rem;
+}
+/* #sticky-note-container{ 
+  height: 400px;
+} */
